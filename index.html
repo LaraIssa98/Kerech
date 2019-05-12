@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Kerech.com </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Template by FREEHTML" />
+    <meta name="author" content="" />
+
+    <!-- 
+	//////////////////////////////////////////////////////
+
+	Website: 		http://kerech.com/
+	Email: 			info@kerech.com
+	Twitter: 		http://twitter.com/kerech
+	Facebook: 		https://www.facebook.com/kerech
+
+	//////////////////////////////////////////////////////
+	 -->
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- Datetimepicker -->
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        /* Full-width input fields */
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        /* Add a background color when the inputs get focus */
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for all buttons */
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.9;
+        }
+
+        button:hover {
+            opacity: 1;
+        }
+
+        /* Extra styles for the cancel button */
+
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+
+        .cancelbtn,
+        .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+
+        .container {
+            padding: 16px;
+        }
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: #474e5d;
+            padding-top: 50px;
+        }
+
+        /* Modal Content/Box */
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* Style the horizontal ruler */
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* The Close Button (x) */
+
+        .close {
+            position: absolute;
+            right: 35px;
+            top: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #f1f1f1;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #f44336;
+            cursor: pointer;
+        }
+
+        /* Clear floats */
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+
+        @media screen and (max-width: 300px) {
+            .cancelbtn,
+            .signupbtn {
+                width: 100%;
+            }
+        }
+
+    </style>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+        body {
+            font-family: 'Open Sans', 'sans-serif';
+        }
+
+        .mega-dropdown {
+            position: static !important;
+        }
+
+        .mega-dropdown-menu {
+            padding: 20px 0px;
+            width: 100%;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+
+        .mega-dropdown-menu>li>ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .mega-dropdown-menu>li>ul>li {
+            list-style: none;
+        }
+
+        .mega-dropdown-menu>li>ul>li>a {
+            display: block;
+            color: #222;
+            padding: 3px 5px;
+        }
+
+        .mega-dropdown-menu>li ul>li>a:hover,
+        .mega-dropdown-menu>li ul>li>a:focus {
+            text-decoration: none;
+        }
+
+        .mega-dropdown-menu .dropdown-header {
+            font-size: 18px;
+            color: #ff3546;
+            padding: 5px 60px 5px 5px;
+            line-height: 30px;
+        }
+
+        .carousel-control {
+            width: 30px;
+            height: 30px;
+            top: -35px;
+
+        }
+
+        .left.carousel-control {
+            right: 30px;
+            left: inherit;
+        }
+
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right {
+            font-size: 12px;
+            background-color: #fff;
+            line-height: 30px;
+            text-shadow: none;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="fh5co-container">
+        <div id="fh5co-home" class="js-fullheight" data-section="home">
+
+            <div class="flexslider">
+
+                <div class="fh5co-overlay"></div>
+                <div class="fh5co-text">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="to-animate">Kerech</h1>
+                            <h2 class="to-animate">Be your own <span>chef</span> </h2>
+                        </div>
+                    </div>
+                </div>
+                <ul class="slides">
+                    <li style="background-image: url(images/slide_1.jpg);" data-stellar-background-ratio="0.5"></li>
+                    <li style="background-image: url(images/slide_2.jpg);" data-stellar-background-ratio="0.5"></li>
+                    <li style="background-image: url(images/slide_3.jpg);" data-stellar-background-ratio="0.5"></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="js-sticky">
+            <div class="fh5co-main-nav">
+                <div class="container-fluid">
+                    <div class="fh5co-menu-1">
+                        <a href="#" data-nav-section="home">Home</a>
+                        <a href="#" data-nav-section="about">About</a>
+                        <a href="#" data-nav-section="features">Features</a>
+                    </div>
+                    <div class="fh5co-logo">
+                        <a href="index.html">Kerech</a>
+                    </div>
+                    <div class="fh5co-menu-2">
+                        <a href="#" data-nav-section="menu">Menu</a>
+                        <a href="#" data-nav-section="events">Boxes</a>
+                        <a href="#" data-nav-section="reservation">Login</a>
+                        <li id="account" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Plan</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!--  my account drop down javaScript-->
+        <script>
+            $(document).ready(function() {
+                $(".dropdown").hover(
+                    function() {
+                        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+                        $(this).toggleClass('open');
+                    },
+                    function() {
+                        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+                        $(this).toggleClass('open');
+                    }
+                );
+            });
+
+        </script>
+        <div id="fh5co-about" data-section="about">
+            <div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)"></div>
+            <div class="fh5co-2col fh5co-text">
+                <h2 class="heading to-animate">About Us</h2>
+                <p class="text-center to-animate"><span class="firstcharacter">W</span>e make it simple to cook good food at home, delivering easy-to-follow recipes and perfectly measured ingredients, right to your door. No nasties, no waste, just good food all round. </p>
+                <p class="text-center to-animate"><a href="#" class="btn btn-primary btn-outline">Get in touch</a></p>
+            </div>
+        </div>
+
+        <div id="fh5co-sayings">
+            <div class="container">
+                <div class="row to-animate">
+
+                    <div class="flexslider">
+                        <ul class="slides">
+
+                            <li>
+                                <p>&ldquo;Good food every day. Designed by your top local chefs, cooked by you.&rdquo;</p>
+
+                            </li>
+                            <li>
+                                <p>&ldquo;Choose your own meals from our store, customize your selection according to your preference.&rdquo;</p>
+                            </li>
+                            <li>
+                                <p>&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</p>
+                            </li>
+                            <li>
+                                <p>&ldquo;Never work before breakfast; if you have to work before breakfast, eat your breakfast first.&rdquo;</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fh5co-featured" data-section="features">
+            <div class="container">
+                <div class="row text-center fh5co-heading row-padded">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="heading to-animate">Featured Dishes</h2>
+                        <p class="sub-heading to-animate">A weekly box of fresh and seasonal ingredients, pre-portioned for the recipes you choose, so you can create great food with less effort.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fh5co-grid">
+                        <div class="fh5co-v-half to-animate-2">
+                            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_1.jpg)"></div>
+                            <div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+                                <h2>Fresh Mushrooms</h2>
+                                <span class="pricing">$7.50</span>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                        <div class="fh5co-v-half">
+                            <div class="fh5co-h-row-2 to-animate-2">
+                                <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_2.jpg)"></div>
+                                <div class="fh5co-v-col-2 fh5co-text arrow-left">
+                                    <h2>Grilled Chiken Salad</h2>
+                                    <span class="pricing">$12.00</span>
+                                    <p>Far far away, behind the word mountains.</p>
+                                </div>
+                            </div>
+                            <div class="fh5co-h-row-2 fh5co-reversed to-animate-2">
+                                <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_8.jpg)"></div>
+                                <div class="fh5co-v-col-2 fh5co-text arrow-right">
+                                    <h2>Cheese and Garlic Toast</h2>
+                                    <span class="pricing">$4.50</span>
+                                    <p>Far far away, behind the word mountains.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fh5co-v-half">
+                            <div class="fh5co-h-row-2 fh5co-reversed to-animate-2">
+                                <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_7.jpg)"></div>
+                                <div class="fh5co-v-col-2 fh5co-text arrow-right">
+                                    <h2>Organic Egg</h2>
+                                    <span class="pricing">$4.99</span>
+                                    <p>Far far away, behind the word mountains.</p>
+                                </div>
+                            </div>
+                            <div class="fh5co-h-row-2 to-animate-2">
+                                <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_6.jpg)"></div>
+                                <div class="fh5co-v-col-2 fh5co-text arrow-left">
+                                    <h2>Salad with Crispy Chicken</h2>
+                                    <span class="pricing">$8.50</span>
+                                    <p>Far far away, behind the word mountains.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fh5co-v-half to-animate-2">
+                            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url(images/res_img_3.jpg)"></div>
+                            <div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+                                <h2>Tomato Soup with Chicken</h2>
+                                <span class="pricing">$12.99</span>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="fh5co-type" style="background-image: url(images/slide_3.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 to-animate">
+                        <div class="fh5co-type">
+                            <h3 class="with-icon icon-1">Fruits</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 to-animate">
+                        <div class="fh5co-type">
+                            <h3 class="with-icon icon-2">Sea food</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 to-animate">
+                        <div class="fh5co-type">
+                            <h3 class="with-icon icon-3">Vegetables</h3>
+                            <p>Our veggie box is filled with delicious seasonal vegetables, whole grains, beautiful cheeses and animal free proteins. These creative recipes will have vegetarians licking the plate clean!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 to-animate">
+                        <div class="fh5co-type">
+                            <h3 class="with-icon icon-4">Meat</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fh5co-menus" data-section="menu">
+            <div class="container">
+                <div class="row text-center fh5co-heading row-padded">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="heading to-animate">Food Menu</h2>
+                        <p class="sub-heading to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="row row-padded">
+                    <div class="col-md-6">
+                        <div class="fh5co-food-menu to-animate-2">
+                            <h2 class="with-icon icon-3">vegetarian</h2>
+                            <ul>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Pineapple Juice</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $17.50
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Green Juice</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $7.99
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Soft Drinks</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $12.99
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Carlo Rosee Drinks</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $12.99
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fh5co-food-menu to-animate-2">
+                            <h2 class="fh5co-dishes">Steak</h2>
+                            <ul>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_3.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Beef Steak</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $17.50
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_4.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Tomato with Chicken</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $7.99
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_2.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Sausages from Italy</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $12.99
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_8.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Beef Grilled</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $12.99
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fh5co-food-menu to-animate-2">
+                            <h2 class="fh5co-drinks">Drinks</h2>
+                            <ul>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Pineapple Juice</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $17.50
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Green Juice</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $7.99
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Soft Drinks</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $12.99
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Carlo Rosee Drinks</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $12.99
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fh5co-food-menu to-animate-2">
+                            <h2 class="fh5co-dishes">Steak</h2>
+                            <ul>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_3.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Beef Steak</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $17.50
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_4.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Tomato with Chicken</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $7.99
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_2.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Sausages from Italy</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $12.99
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fh5co-food-desc">
+                                        <figure>
+                                            <img src="images/res_img_8.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+                                        </figure>
+                                        <div>
+                                            <h3>Beef Grilled</h3>
+                                            <p>Far far away, behind the word mountains.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fh5co-food-pricing">
+                                        $12.99
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center to-animate-2">
+                        <p><a href="#" class="btn btn-primary btn-outline">More Food Menu</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fh5co-events" data-section="events" style="background-image: url(images/slide_2.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-overlay"></div>
+            <div class="container">
+                <div class="row text-center fh5co-heading row-padded">
+                    <div class="col-md-8 col-md-offset-2 to-animate">
+                        <h2 class="heading">Boxes</h2>
+                        <!--                       <p class="sub-heading">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="fh5co-event to-animate-2">
+                            <h3>Classic Box</h3>
+                            <span class="fh5co-event-meta">  Starting at $9.38 PER MEAL/PERSON<br> Including delivery  </span>
+                            <p>Unique ingredients and recipes for a culinary adventure. </p>
+                            <p><a href="#" class="btn btn-primary btn-outline">Select this box</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fh5co-event to-animate-2">
+                            <h3>Vegetarian Box</h3>
+                            <span class="fh5co-event-meta"> Starting at
+$7.12 PER MEAL/PERSON<br>
+Including delivery </span>
+                            <p>Well-balanced meals with exciting flavors</p>
+                            <p><a href=" # " class="btn btn-primary btn-outline ">Select this box</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="fh5co-event to-animate-2">
+                            <h3>Family Box</h3>
+                            <span class="fh5co-event-meta ">Starting at $9.38 PER MEAL/PERSON <br/>
+                             Including delivery </span>
+                            <p>Quicker and kid-friendly recipes.
+                                <br/>
+                                <br/>
+
+                            </p>
+                            <p><a href="# " class="btn btn-primary btn-outline ">Select this box</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fh5co-contact" data-section="reservation">
+            <div class="container">
+                <div class="row text-center fh5co-heading row-padded">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="heading to-animate">Join us now and get delicious meals on the table every day.</h2>
+                        <p class="sub-heading to-animate"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 to-animate-2">
+                        <h3>Contact Info</h3>
+                        <ul class="fh5co-contact-info">
+                            <li class="fh5co-contact-address ">
+                                <i class="icon-home"></i> D1 tower, Downtown Beirut, <br>Lebanon
+                            </li>
+                            <li><i class="icon-phone"></i> +961 1000111</li>
+                            <li><i class="icon-envelope"></i>info@Kerech.com</li>
+                            <!--                            <li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="col-md-6 to-animate-2">
+                        <h3>Be Chef</h3>
+
+                        <div class="form-group ">
+                            <label for="email" class="sr-only">Email</label>
+                            <input id="email" class="form-control" placeholder="Email" type="email">
+                        </div>
+                        <div class="form-group ">
+                            <label for="password " class="sr-only " required>Password</label>
+                            <input id="password " class="form-control " placeholder="Password ">
+                        </div>
+
+
+
+                        <div class="form-group ">
+                            <input class="btn btn-primary" value="Login" type="submit">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#signup" onclick="document.getElementById('id01').style.display='block'" style="display: inline-block"><b>Signup</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- The Modal (contains the Sign Up form) -->
+        <div id="id01" class="modal" Style="z-index=30%">1
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signup">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+        </script>
+
+
+
+
+        <div id="fh5co-footer">
+            <div class="container">
+                <div class="row row-padded">
+                    <div class="col-md-12 text-center">
+                        <p class="to-animate">
+                            <script>
+                                var today = new Date();
+                                document.write("&copy;&nbsp;");
+                                document.write(today.getFullYear());
+                                document.write(", Kerech Be Your Own Chef.")
+
+                            </script>
+                        </p>
+                        <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="fh5co-social">
+                            <li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js "></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js "></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js "></script>
+        <!-- Bootstrap DateTimePicker -->
+        <script src="js/moment.js "></script>
+        <script src="js/bootstrap-datetimepicker.min.js "></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js "></script>
+        <!-- Stellar Parallax -->
+        <script src="js/jquery.stellar.min.js "></script>
+
+        <!-- Flexslider -->
+        <script src="js/jquery.flexslider-min.js "></script>
+        <script>
+            $(function() {
+                $('#date').datetimepicker();
+            });
+
+        </script>
+        <!-- Main JS -->
+        <script src="js/main.js "></script>
+
+</body>
+
+</html>

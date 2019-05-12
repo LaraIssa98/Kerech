@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to eBUY!</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+<div class="container">
+  <div class="profile">
+    <h1> Employee login   </h1>
+    <button class="profile__avatar" id="toggleProfile">
+     <img src="logo2.png" alt="Avatar" /> 
+    </button>
+    <div class="profile__form">
+      
+      <form action="empValidate.php" method="post">
+      <div class="profile__fields" action="validate.php">
+        <div class="field">
+          <input type="text" id="fieldUser" name="user" class="input" required pattern=.*\S.*  />
+          <label for="fieldUser" class="label">Username</label>
+        </div>
+        <div class="field">
+          <input type="password" name="pass" id="fieldPassword" class="input" required pattern=.*\S.*  />
+          <label for="fieldPassword" class="label">Password</label>
+        </div>
+        <br>
+        <div class="profile__footer">
+          <button class="btn">Login</button>
+        </div>
+      </div>
+      </form>
+     </div>
+  </div>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
